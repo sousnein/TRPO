@@ -1,0 +1,77 @@
+﻿<Window x:Class="Variant_01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Variant_01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox
+            x:Name="number_one"
+            Margin="0,0,550,380"
+            Text="Введите первое число"
+            FontSize="20px"
+            MouseDoubleClick="CleanValueOnClick"
+        ></TextBox>
+        <TextBox
+            x:Name="number_two"
+            Margin="250,0,300,380"
+            Text="Введите второе число"
+            FontSize="20px"
+            MouseDoubleClick="CleanValueOnClick"
+        ></TextBox>
+        <TextBox
+            x:Name="number_three"
+            Margin="500,0,0,380"
+            Text="Введите третье число"
+            ToolTip="kjfkd"
+            FontSize="20px"
+            MouseDoubleClick="CleanValueOnClick"
+        ></TextBox>
+        <Button 
+            x:Name="sum_button"
+            Content="Найти сумму" 
+            Click="SummOnClick"
+            HorizontalAlignment="Left" 
+            Margin="10,59,0,0" 
+            VerticalAlignment="Top" 
+            Height="49" 
+            Width="93" />
+        <Button
+            x:Name="multipl_button"
+            Click="MultiOnClick"
+            Content="Найти произведение" 
+            HorizontalAlignment="Left" 
+            Margin="125,59,0,0" 
+            VerticalAlignment="Top" 
+            Height="49" 
+            Width="120"/>
+        <Button
+            x:Name="random_button"
+            Content="Рандомные числа" 
+            HorizontalAlignment="Left" 
+            Click="RandomizeNumbersOnClick"
+            Margin="270,59,0,0" 
+            VerticalAlignment="Top" 
+            Height="49" 
+            Width="120"/>
+        <TextBlock
+            x:Name="result_textBox"
+            HorizontalAlignment="Left" 
+            Margin="10,138,0,0" 
+            TextWrapping="Wrap" 
+            FontSize="20px"
+            Text="Результат работы программы" 
+            VerticalAlignment="Top" 
+            Width="500" 
+            Height="69"/>
+        <TextBlock 
+            TextWrapping="WrapWithOverflow"
+            FontSize="20px"
+            Margin="0,251,0,0" 
+            Height="173" 
+            Width="780">Вариант 1. Введите с клавиатуры три целых числа. Найдите их сумму и произведение. Результат выведите на экран в одно поле, при этом по нажатию кнопки будут поочередно демонстрироваться сумма и произведение.</TextBlock>
+
+    </Grid>
+</Window>
